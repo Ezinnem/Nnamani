@@ -17,7 +17,7 @@ app.use(express.static("public"));
 app.post("/addNotes", function(req, res){
 
 let newNotes = ["Author: "
-  + req.body.newName+ " Note: ", req.body.newNote
+  + req.body.newName +" "+ " Note: ", req.body.newNote
 ];
 //add the new Note from the post route into the array of notes
 note.push(newNotes);
